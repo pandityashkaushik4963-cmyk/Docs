@@ -2,21 +2,21 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="relative z-50">
-      <nav className="flex justify-between items-center bg-blue-800 text-white py-1">
-        <div className="logo ">
-          <span className="font-bold text-xl mx-9 cursor-pointer">Todos</span>
-        </div>
-        <div className="flex gap-8 mx-9 ">
+    <div className="w-full flex justify-center py-4 relative z-50 px-4">
+      <nav className="w-full max-w-3xl flex justify-between items-center rounded-2xl border border-white/10 bg-zinc-900/40 backdrop-blur-md shadow-lg shadow-black/20 px-8 py-3">
+        <span className="font-bold text-xl text-white tracking-wide cursor-pointer">
+          Todos
+        </span>
+        <div className="flex gap-8">
           <Link
             to="/"
-            className="cursor-pointer border-2 border-blue-800 active:bg-blue-600 transition-all hover:border-white p-2"
+            className="text-zinc-200 hover:text-white transition-colors duration-200 px-2 py-1 border-b-2 border-transparent hover:border-white"
           >
             Home
           </Link>
           <Link
             to="/YourTaskPage"
-            className="cursor-pointer border-2 border-blue-800 active:bg-blue-600 transition-all hover:border-white p-2"
+            className="text-zinc-200 hover:text-white transition-colors duration-200 px-2 py-1 border-b-2 border-transparent hover:border-white"
           >
             Your Tasks
           </Link>

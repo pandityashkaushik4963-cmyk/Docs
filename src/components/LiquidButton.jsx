@@ -1,9 +1,9 @@
-import React from "react";
+
 
 const LiquidButton = (props) => {
   return (
     // 'group' क्लास यहाँ सबसे ज़रूरी है, यही अंदर के बैकग्राउंड को कंट्रोल करेगी
-    <button className={`group relative px-15 py-4 active:scale-95 rounded-2xl border-2 border-white bg-transparent font-semibold text-lg overflow-hidden cursor-pointer`}>
+    <button className={`group relative px-15 py-4 hover:scale-105 active:scale-95 rounded-2xl border-2 border-white bg-transparent font-semibold text-lg overflow-hidden cursor-pointer`}>
       
       {/* 1. लिक्विड बैकग्राउंड लेयर */}
       {/* शुरुआत में यह left-0 और -translate-x-full (100% बाएं) छुपा रहेगा */}
