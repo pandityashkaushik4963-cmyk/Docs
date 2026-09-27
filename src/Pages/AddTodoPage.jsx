@@ -33,7 +33,7 @@ const AddTodoPage = () => {
         </div>
 
         <div className="social flex gap-3 text-5xl justify-center items-center p-10 text-slate-500 ">
-          <a href="www.linkedin.com/in/yash-kaushik-84582941b" target="_blank" rel="noopener noreferrer" >
+          <a href="https://linkedin.com/in/yash-kaushik-84582941b" target="_blank" rel="noopener noreferrer" >
             <i className="fa-brands fa-square-linkedin hover:text-cyan-400 cursor-pointer"></i>
           </a>
           <a href="https://github.com/pandityashkaushik4963-cmyk" target="_blank" rel="noopener noreferrer" >
