@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Chewy&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addTodo textarea{
+  outline: none;
+}
+
+::selection{
+  color: rgb(255, 217, 0);
+}
+
+.btn{
+  font-family: Comic Neue;
+}
+h1{
+  font-family: Chewy;
+  letter-spacing: 8px;
+  font-size: 150px;
+}
+.back{
+  background: linear-gradient(#05cdff, #035063);
+}
