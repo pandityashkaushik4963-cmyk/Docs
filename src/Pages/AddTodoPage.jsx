@@ -19,23 +19,23 @@ const AddTodoPage = () => {
   const handleChange = (e) => setTodo(e.target.value);
 
   return (
-    <div className="bg-slate-100 w-full h-screen overflow-auto">
+    <div className="bg-[#060b13] w-full h-screen overflow-auto">
       <Navbar />
-      <div className="w-1/2 mx-auto my-5 rounded-xl px-10 py-5 bg-white shadow-xl shadow-slate-200/50 min-h-[80vh]">
+      <div className="w-1/2 mx-auto my-5 rounded-xl px-10 py-5 bg-[#0B0F19]/60 backdrop-blur-xl border border-white/10   min-h-[80vh]">
         <div className="addTodo my-4 flex flex-col">
-          <h2 className="font-semibold text-4xl text-center mb-5">Add Your Todo</h2>
+          <h2 className="font-semibold text-4xl text-center mb-5  text-slate-100 ">Add Your Todo</h2>
           <textarea
             onChange={handleChange}
             value={todo}
-            className="w-full bg-slate-50 overflow-hidden pt-5 pb-25 resize-none pl-5 mb-5 border-2 rounded-2xl border-black text-slate-800"
+            className="w-full bg-[#161f30] text-white focus:border-cyan-500 overflow-hidden pt-5 pb-25 resize-none pl-5 mb-5 border-2 rounded-2xl border-black caret-cyan-400"
           />
           <LiquidButtonCopy text="Add" onClick={handleAdd} />
         </div>
 
-        <div className="social flex gap-3 text-5xl justify-center items-center p-10 text-slate-200">
-          <i className="fa-brands fa-square-linkedin hover:text-slate-400 cursor-pointer"></i>
-          <i className="fa-brands fa-square-github hover:text-slate-400 cursor-pointer"></i>
-          <i className="fa-brands fa-square-x-twitter hover:text-slate-400 cursor-pointer"></i>
+        <div className="social flex gap-3 text-5xl justify-center items-center p-10 text-slate-500 ">
+          <i className="fa-brands fa-square-linkedin hover:text-cyan-400 cursor-pointer"></i>
+          <i className="fa-brands fa-square-github hover:text-cyan-400 cursor-pointer"></i>
+          <i className="fa-brands fa-square-x-twitter hover:text-cyan-400 cursor-pointer"></i>
         </div>
       </div>
     </div>
