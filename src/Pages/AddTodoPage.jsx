@@ -19,20 +19,22 @@ const AddTodoPage = () => {
   const handleChange = (e) => setTodo(e.target.value);
 
   return (
-    <div className="bg-[#060b13] w-full h-screen overflow-auto">
+    <div className="bg-[#060b13] w-full min-h-dvh overflow-x-hidden">
       <Navbar />
-      <div className="w-1/2 mx-auto my-5 rounded-xl px-10 py-5 bg-[#0B0F19]/60 backdrop-blur-xl border border-white/10   min-h-[80vh]">
+      {/* RESPONSIVE: w-1/2 was far too narrow on phones.
+          mobile: 92% width -> md: 3/4 -> lg: 1/2 (original) */}
+      <div className="w-[92%] md:w-3/4 lg:w-1/2 mx-auto my-3 sm:my-5 rounded-xl px-4 sm:px-10 py-5 bg-[#0B0F19]/60 backdrop-blur-xl border border-white/10   min-h-[80vh]">
         <div className="addTodo my-4 flex flex-col">
-          <h2 className="font-semibold text-4xl text-center mb-5  text-slate-100 ">Add Your Todo</h2>
+          <h2 className="font-semibold text-2xl sm:text-4xl text-center mb-5  text-slate-100 ">Add Your Todo</h2>
           <textarea
             onChange={handleChange}
             value={todo}
-            className="w-full bg-[#161f30] text-white focus:border-cyan-500 overflow-hidden pt-5 pb-25 resize-none pl-5 mb-5 border-2 rounded-2xl border-black caret-cyan-400"
+            className="w-full bg-[#161f30] text-white focus:border-cyan-500 overflow-hidden pt-5 pb-16 sm:pb-25 resize-none pl-5 mb-5 border-2 rounded-2xl border-black caret-cyan-400"
           />
           <LiquidButtonCopy text="Add" onClick={handleAdd} />
         </div>
 
-        <div className="social flex gap-3 text-5xl justify-center items-center p-10 text-slate-500 ">
+        <div className="social flex flex-wrap gap-3 text-4xl sm:text-5xl justify-center items-center p-6 sm:p-10 text-slate-500 ">
           <a href="https://linkedin.com/in/yash-kaushik-84582941b" target="_blank" rel="noopener noreferrer" >
             <i className="fa-brands fa-square-linkedin hover:text-cyan-400 cursor-pointer"></i>
           </a>

@@ -3,7 +3,9 @@ import React from "react";
 const LiquidButtonRight = (props) => {
   return (
     // 'group' क्लास पूरे बटन को एक साथ कंट्रोल करेगी
-    <button className="group relative px-30 py-4 active:scale-95 rounded-2xl border-2 bg-slate-900/30 font-medium text-lg overflow-hidden cursor-pointer border-slate-700/60">
+    // RESPONSIVE: px-30 (240px total side padding) was wider than a phone screen,
+    // so it scales up: px-14 -> sm:px-20 -> md:px-30
+    <button className="group relative px-14 sm:px-20 md:px-30 py-4 active:scale-95 rounded-2xl border-2 bg-slate-900/30 font-medium text-base sm:text-lg overflow-hidden cursor-pointer border-slate-700/60">
       
       {/* 1. लिक्विड बैकग्राउंड लेयर (Right Side से आने वाला) */}
       {/* translate-x-full इसे शुरुआत में बटन के बिल्कुल दाईं (right) तरफ छुपा कर रखेगा */}

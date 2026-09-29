@@ -5,6 +5,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* RESPONSIVE: page-level safety net so nothing can cause sideways scrolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .addTodo textarea{
   outline: none;
 }
@@ -16,10 +22,24 @@
 .btn{
   font-family: Comic Neue;
 }
+
+/* RESPONSIVE: fluid heading. 150px on large desktops (same as before),
+   scales down smoothly with the viewport on tablets and phones. */
 h1{
   font-family: Chewy;
-  letter-spacing: 8px;
-  font-size: 150px;
+  letter-spacing: clamp(2px, 0.6vw, 8px);
+  font-size: clamp(44px, 11vw, 150px);
+  line-height: 1.1;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* Small phones: tighter spacing so the title never overflows */
+@media (max-width: 480px) {
+  h1 {
+    letter-spacing: 2px;
+    font-size: clamp(40px, 13vw, 64px);
+  }
 }
 
 
@@ -53,10 +73,29 @@ h1{
   box-shadow: 0 0 10px rgba(6, 182, 212, 0.5); /* नियॉन ग्लो इफ़ेक्ट */
 }
 
+/* RESPONSIVE: thinner scrollbar on small screens */
+@media (max-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+}
+
 
 /* पूरे ऐप से डिफ़ॉल्ट माउस पॉइंटर को छुपाना */
-html, body, a, button, textarea, input, .cursor-pointer {
-  cursor: none !important;
+/* RESPONSIVE: only on devices that really have a mouse. Touch devices keep normal behaviour. */
+@media (hover: hover) and (pointer: fine) {
+  html, body, a, button, textarea, input, .cursor-pointer {
+    cursor: none !important;
+  }
+}
+
+/* RESPONSIVE: touch devices have no mouse, so hide the custom cursor completely */
+@media (hover: none), (pointer: coarse) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
 }
 
 /* कर्सर का मुख्य नियॉन डॉट (Center Dot) */

@@ -7,7 +7,9 @@ import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
   return (
-    <div className="w-full relative h-screen bg-zinc-800">
+    // RESPONSIVE: min-h-dvh instead of h-screen so content can grow on short/mobile screens
+    // (dvh also accounts for the mobile browser address bar)
+    <div className="w-full relative min-h-dvh bg-zinc-800">
       <CustomCursor />
 
       <TodoProvider>

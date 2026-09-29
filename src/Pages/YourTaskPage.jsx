@@ -4,8 +4,9 @@ import Navbar from '../components/Navbar'
 
 const YourTaskPage = () => {
   return (
-    // w-full min-h-screen और bg-[#060b13] की मदद से नेवबार के ऊपर और पीछे का खराब स्लेटी रंग पूरी तरह गायब हो जाएगा
-    <div className='w-full min-h-screen bg-[#0B0F19] flex flex-col relative antialiased select-none'>
+    // w-full min-h-dvh और bg-[#060b13] की मदद से नेवबार के ऊपर और पीछे का खराब स्लेटी रंग पूरी तरह गायब हो जाएगा
+    // RESPONSIVE: min-h-dvh follows the visible height on mobile browsers
+    <div className='w-full min-h-dvh bg-[#0B0F19] flex flex-col relative antialiased select-none'>
         
         {/* आपका ग्लासमोर्फिक नेवबार सबसे ऊपर रहेगा */}
         <Navbar />

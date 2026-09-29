@@ -1,9 +1,9 @@
 
-
 const LiquidButton = (props) => {
   return (
     // 'group' क्लास यहाँ सबसे ज़रूरी है, यही अंदर के बैकग्राउंड को कंट्रोल करेगी
-    <button className={`group relative px-15 py-4 hover:scale-105 active:scale-95 rounded-2xl border-2   font-semibold text-lg overflow-hidden cursor-pointer border-slate-700/60 bg-slate-900/30 ` }>
+    // RESPONSIVE: smaller horizontal padding on phones, original px-15 from sm up
+    <button className={`group relative px-10 sm:px-15 py-4 hover:scale-105 active:scale-95 rounded-2xl border-2   font-semibold text-base sm:text-lg overflow-hidden cursor-pointer border-slate-700/60 bg-slate-900/30 ` }>
       
       {/* 1. लिक्विड बैकग्राउंड लेयर */}
       {/* शुरुआत में यह left-0 और -translate-x-full (100% बाएं) छुपा रहेगा */}
