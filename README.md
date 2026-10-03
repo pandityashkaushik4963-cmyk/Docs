@@ -38,5 +38,3 @@ To run this project locally, follow these quick steps:
    ```
    *Open `http://localhost:5173` in your browser to view the application.*
 
-## 🤖 AI Usage Declaration
-AI assistants were utilized strictly for research, troubleshooting production routing behaviors (such as configuring Netlify edge redirection via `_redirects` for React Router), and syntax checks. All core features, components, and logic were built manually.
