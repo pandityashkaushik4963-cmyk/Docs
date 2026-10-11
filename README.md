@@ -12,29 +12,9 @@
 - **Task Deletion:** Quick-remove actions to declutter your workspace instantly.
 - **Fully Responsive UI:** Dark-themed, modern dashboard aesthetic accessible on multiple screen formats.
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack [I use this tech stack in my this project.]
 - **Frontend Framework:** React.js (built with Vite for lightning-fast performance)
 - **Styling:** Modern CSS / Components
 - **Hosting Platform:** Netlify
 
-## 💻 Local Setup & Installation
-
-To run this project locally, follow these quick steps:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com
-   cd Docs
-   ```
-
-2. **Install all dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-   *Open `http://localhost:5173` in your browser to view the application.*
 
